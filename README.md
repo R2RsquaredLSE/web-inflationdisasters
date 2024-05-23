@@ -1,28 +1,28 @@
 .
 # Summary
-A central bank cross-border liquidity line is an agreement between two central banks to provide a collateralised loan of currency from one to the other. They have been around for
-a long time, but have risen in prominence since the global financial crisis. This dataset provides a comprehensive (to the best of our knowledge and ability) repository for all lines in place since 2000. This dataset was collated from public sources, so it can be **freely used** by other researchers.
+The prices of inflation options give the cost of insuring against extreme events. They reveal the probabilitiy of these events as perceived by market participants. However, to extract these probabilities, the standard formula for option pricing formula have to be modified in three ways: to account for the erosion of the real valaue of the options' payoff, to account for the 5-year ahead starting horizon, and to account for compensation for inflation risk. Below are the data and figures for the probabilities of inflation disasters, making some or all of these adjustments. The data starts in January of 2011 and refers to US and EA inflation. This dataset can be **freely used** by other researchers.
 
 The dataset will be updated regularly to reflect the latest data.
-- **Vintage 1:** The dataset was last updated in May 2024 to cover lines in place until December 2023. 
+- **Vintage 1:** The dataset was fist released in April of 2022 to cover probabilities until February 2022. 
+- **Vintage 2:** The dataset was updated in October 2023 to cover probabilities until August 2023. 
+- **Vintage 3:** The dataset was updated in June 2024 to cover probabilities until April 2024. 
 
 ---
 
 # Authors and Reference:
-[The Global Network of Liquidity Lines](https://r2rsquaredlse.github.io/web-lines/DP19070.pdf) (2024), CEPR discussion paper 19070. 
-[bibtex](https://personal.lse.ac.uk/reisr/papers/99-lines-bib.bib)
-- [Saleem Bahaj](https://sites.google.com/site/saleembahaj/home)
-- [Marie Fuchs](https://www.lse.ac.uk/economics/people/research-students/marie-fuchs)
+[How Likely Is an Inflation Disaster?](https://r2rsquaredlse.github.io/web-lines/infdis.pdf) (2022), CEPR discussion paper 17224. 
+[bibtex](https://personal.lse.ac.uk/reisr/papers/99-infdis-bib.bib)
+- [Jens Hilscher](https://hilscher.ucdavis.edu)
+- [Alon Raviv](https://mba.biu.ac.il/en/raviv)
 - [Ricardo Reis](https://www.r2rsquared.com/)
-- Acknowledgments: Marina Feliciano, Seyed Mahdi Hosseini, and Xiaotong Wu provided excellent research assistance.
+- Acknowledgments: Daniel Albuquerque, Marina Feliciano, Seyed Mahdi Hosseini, Anna Pilipentseva, Rui Sousa, and Borui Zhu provided excellent research assistance.
 
 ---
 
-# Full Dataset
-Download in three formats:
-- [Excel](liquidity_lines_0524.xlsx) (with meta data)
-- [csv](liquidity_lines_0524.csv)
-- [dta](liquidity_lins_0524.dta)
+# Probabilities of disaster
+Download in Stata dta format:
+- [United States](USwesttimates.dta)
+- [Euro Area](EZwestimates.dta)
 
 ---
 
@@ -36,144 +36,113 @@ by individual bank), by counterparties (central banks), and by some terms (like 
     <th style="border: 2px solid #68b684; padding: 8px;">Description</th>
   </tr>
   <tr style="background-color: #f5f5f5;">
-    <td style="border: 2px solid #68b684; padding: 8px;"><code>deal_ID</code></td>
-    <td style="border: 2px solid #68b684; padding: 8px;">Unique ID for each row representing a deal</td>
+    <td style="border: 2px solid #68b684; padding: 8px;"><code>date_ym</code></td>
+    <td style="border: 2px solid #68b684; padding: 8px;">Date year-month</td>
   </tr>
   <tr style="background-color: #d4f4d3;">
-    <td style="border: 2px solid #68b684; padding: 8px;"><code>deal_type</code></td>
-    <td style="border: 2px solid #68b684; padding: 8px;">String indicating reciprocity type</td>
+    <td style="border: 2px solid #68b684; padding: 8px;"><code>date_stata</code></td>
+    <td style="border: 2px solid #68b684; padding: 8px;">Date in Stata format</td>
   </tr>
   <tr style="background-color: #f5f5f5;">
-    <td style="border: 2px solid #68b684; padding: 8px;"><code>framework</code></td>
-    <td style="border: 2px solid #68b684; padding: 8px;">String indicating if deal is part of larger framework agreement</td>
+    <td style="border: 2px solid #68b684; padding: 8px;"><code>higher4_5y5y</code></td>
+    <td style="border: 2px solid #68b684; padding: 8px;">Baseline estimates, more than 4% </td>
   </tr>
   <tr style="background-color: #d4f4d3;">
-    <td style="border: 2px solid #68b684; padding: 8px;"><code>reciprocal_deal</code></td>
-    <td style="border: 2px solid #68b684; padding: 8px;">If deal is reciprocal, numeric value indicating matching reciprocal deal</td>
+    <td style="border: 2px solid #68b684; padding: 8px;"><code>higher5_5y5y</code></td>
+    <td style="border: 2px solid #68b684; padding: 8px;">Baseline estimates, more than 5%</td>
   </tr>
   <tr style="background-color: #f5f5f5;">
-    <td style="border: 2px solid #68b684; padding: 8px;"><code>collateral</code></td>
-    <td style="border: 2px solid #68b684; padding: 8px;">String indicating type of collateral underlying each deal</td>
+    <td style="border: 2px solid #68b684; padding: 8px;"><code>lower0_5y5y</code></td>
+    <td style="border: 2px solid #68b684; padding: 8px;">Baseline estimates, less than 0%</td>
   </tr>
   <tr style="background-color: #d4f4d3;">
-    <td style="border: 2px solid #68b684; padding: 8px;"><code>ISO_source</code></td>
-    <td style="border: 2px solid #68b684; padding: 8px;">Source country ISO 3166-1 (alpha-3) country code</td>
+    <td style="border: 2px solid #68b684; padding: 8px;"><code>lowerm1_5y5y</code></td>
+    <td style="border: 2px solid #68b684; padding: 8px;">Baseline estimates, less than -1%</td>
   </tr>
   <tr style="background-color: #f5f5f5;">
-    <td style="border: 2px solid #68b684; padding: 8px;"><code>source_country</code></td>
-    <td style="border: 2px solid #68b684; padding: 8px;">Source country name</td>
+    <td style="border: 2px solid #68b684; padding: 8px;"><code>zc_higher4_5y</code></td>
+    <td style="border: 2px solid #68b684; padding: 8px;">No horizon adjustment, higher than 4%, 5 year horizon</td>
   </tr>
   <tr style="background-color: #d4f4d3;">
-    <td style="border: 2px solid #68b684; padding: 8px;"><code>ISO_recipient</code></td>
-    <td style="border: 2px solid #68b684; padding: 8px;">Recipient country ISO 3166-1 (alpha-3) country code</td>
+    <td style="border: 2px solid #68b684; padding: 8px;"><code>zc_higher5_5y</code></td>
+    <td style="border: 2px solid #68b684; padding: 8px;">No horizon adjustment, higher than 5%, 5 year horizon</td>
   </tr>
   <tr style="background-color: #f5f5f5;">
-    <td style="border: 2px solid #68b684; padding: 8px;"><code>recipient_country</code></td>
-    <td style="border: 2px solid #68b684; padding: 8px;">Recipient country name</td>
+    <td style="border: 2px solid #68b684; padding: 8px;"><code>zc_lower0_5y</code></td>
+    <td style="border: 2px solid #68b684; padding: 8px;">No horizon adjustment, lower than 0%, 5 year horizon</td>
   </tr>
   <tr style="background-color: #d4f4d3;">
-    <td style="border: 2px solid #68b684; padding: 8px;"><code>start_date</code></td>
-    <td style="border: 2px solid #68b684; padding: 8px;">Agreement signature date or press release date</td>
+    <td style="border: 2px solid #68b684; padding: 8px;"><code>zc_lowerm1_5y</code></td>
+    <td style="border: 2px solid #68b684; padding: 8px;">No horizon adjustment, lower than -1%, 5 year horizon</td>
   </tr>
   <tr style="background-color: #f5f5f5;">
-    <td style="border: 2px solid #68b684; padding: 8px;"><code>end_date</code></td>
-    <td style="border: 2px solid #68b684; padding: 8px;">Agreed expiration date as mentioned in press release</td>
+    <td style="border: 2px solid #68b684; padding: 8px;"><code>zc_higher4_10y</code></td>
+    <td style="border: 2px solid #68b684; padding: 8px;">No horizon adjustment, higher than 4%, 10 year horizon</td>
   </tr>
   <tr style="background-color: #d4f4d3;">
-    <td style="border: 2px solid #68b684; padding: 8px;"><code>existence_previous_deal</code></td>
-    <td style="border: 2px solid #68b684; padding: 8px;">Indicator variable for whether a deal of any kind existed between the two countries in the past</td>
+    <td style="border: 2px solid #68b684; padding: 8px;"><code>zc_higher5_10y</code></td>
+    <td style="border: 2px solid #68b684; padding: 8px;">No horizon adjustment, higher than 5%, 10 year horizon</td>
   </tr>
   <tr style="background-color: #f5f5f5;">
-    <td style="border: 2px solid #68b684; padding: 8px;"><code>deal_action</code></td>
-    <td style="border: 2px solid #68b684; padding: 8px;">String variable indicating the role of each deal within a deal chain</td>
+    <td style="border: 2px solid #68b684; padding: 8px;"><code>zc_lower0_10y</code></td>
+    <td style="border: 2px solid #68b684; padding: 8px;">No horizon adjustment, lower than 0%, 10 year horizon</td>
   </tr>
   <tr style="background-color: #d4f4d3;">
-    <td style="border: 2px solid #68b684; padding: 8px;"><code>previous_deal</code></td>
-    <td style="border: 2px solid #68b684; padding: 8px;">(Backward-looking) if deal_action renew or reactivate, previous_deal indicates prior deal of identical characteristics being renewed or reactivated</td>
-  </tr>
-  <tr style="background-color: #f5f5f5;">
-    <td style="border: 2px solid #68b684; padding: 8px;"><code>currency_of_deal</code></td>
-    <td style="border: 2px solid #68b684; padding: 8px;">Agreed currency of the deal (ISO4217 standard abbreviation)</td>
-  </tr>
-  <tr style="background-color: #d4f4d3;">
-    <td style="border: 2px solid #68b684; padding: 8px;"><code>source_currency</code></td>
-    <td style="border: 2px solid #68b684; padding: 8px;">Source central bank currency (ISO4217 standard abbreviation)</td>
-  </tr>
-  <tr style="background-color: #f5f5f5;">
-    <td style="border: 2px solid #68b684; padding: 8px;"><code>source_currency_deal</code></td>
-    <td style="border: 2px solid #68b684; padding: 8px;">Dummy variable if deal and source are same currency</td>
-  </tr>
-  <tr style="background-color: #d4f4d3;">
-    <td style="border: 2px solid #68b684; padding: 8px;"><code>deal_currency_amount</code></td>
-    <td style="border: 2px solid #68b684; padding: 8px;">Quoted maximum amount agreed on in currency of the deal; registered in billion as mentioned in press release</td>
-  </tr>
-  <tr style="background-color: #f5f5f5;">
-    <td style="border: 2px solid #68b684; padding: 8px;"><code>USD_amount</code></td>
-    <td style="border: 2px solid #68b684; padding: 8px;">If deal amount mentioned in USD in press release, then USD maximum amount, otherwise NA</td>
-  </tr>
-  <tr style="background-color: #d4f4d3;">
-    <td style="border: 2px solid #68b684; padding: 8px;"><code>unlimited</code></td>
-    <td style="border: 2px solid #68b684; padding: 8px;">Indicator variable for whether deal amount was unlimited</td>
-  </tr>
-  <tr style="background-color: #f5f5f5;">
-    <td style="border: 2px solid #68b684; padding: 8px;"><code>initiative</code></td>
-    <td style="border: 2px solid #68b684; padding: 8px;">Initiative under which deal was agreed (if any)</td>
+    <td style="border: 2px solid #68b684; padding: 8px;"><code>zc_lowerm1_10y</code></td>
+    <td style="border: 2px solid #68b684; padding: 8px;">No horizon adjustment, lower than -1%, 10 year horizon</td>
   </tr>
 </table>
 
 ---
 
-# Latest Figures (as of 2023)
+# Latest Figures (until April 2024)
 
-## Geographical coverage of the liquidity lines
-![Map of the lines](map_temp_2023_edit.png)
+## Main estimates, high inflation, US
+![US inflation](figw_USinfshort.png)
 
-Data for replication: [Excel](Map_network_xlsx.zip), [csv](Map_network_csv.zip), [dta](Map_network_dta.zip) 
-
----
-
-## Geographical coverage of the USD bilateral liquidity lines by degree
-![Map of USD lines](network_bilateral2023_USA.png)
-
-Data for replication: [Excel](/network_bilateral2023_USA.xlsx), [csv](/network_bilateral2023_USA.csv), [dta](/network_bilateral2023_USA.dta) 
+Probability that inflation is above 4% (5%) on average in five years for five years (so, e.g., estimate in April 2024 is for annualized inflation between April 2029 and April 2034.
 
 ---
 
-## Geographical coverage of the EUR bilateral liquidity lines by degree
-![Map of EUR lines](network_bilateral2023_EA.png)
+## Main estimates, high inflation, EA
+![EA inflation](figw_EZinfshort.png)
 
-Data for replication: [Excel](network_bilateral2023_EA.xlsx), [csv](network_bilateral2023_EA.csv), [dta](network_bilateral2023_EA.dta) 
-
----
-
-## Geographical coverage of the RMB bilateral liquidity lines by degree
-![Map of RMB lines](network_bilateral2023_CHN.png)
-
-Data for replication: [Excel](network_bilateral2023_CHN.xlsx), [csv](network_bilateral2023_CHN.csv), [dta](network_bilateral2023_CHN.dta) 
+Probability that inflation is above 4% (5%) on average in five years for five years (so, e.g., estimate in April 2024 is for annualized inflation between April 2029 and April 2034.)
 
 ---
 
-## The evolution over time of the liquidity lines
-![Lines over time](combined_TotalConnections.png)
-Data for replication: [Excel](combined_TotalConnections.xlsx), [csv](combined_TotalConnections.csv), [dta](combined_TotalConnections.dta) 
+## Main estimates, deflation, US
+![US deflation](figw_USdefshort.png)
+
+Probability that inflation is below 0% (-1%) on average in five years for five years (so, e.g., estimate in April 2024 is for annualized inflation between April 2029 and April 2034.)
 
 ---
 
-## The evolution over time of the USD bilateral liquidity lines 
-![USD lines over time](bilateral_USAcoverage_GDP.png) 
-Data for replication: [Excel](bilateral_USAcoverage_GDP.xls), [csv](bilateral_USAcoverage_GDP.csv), [dta](bilateral_USAcoverage_GDP.dta) 
+## Main estimates, deflation, EA
+![EA deflation](figw_EZdefshort.png)
+
+Probability that inflation is below 0% (-1%) on average in five years for five years (so, e.g., estimate in April 2024 is for annualized inflation between April 2029 and April 2034).
 
 ---
 
-## The evolution over time of the EUR bilateral liquidity lines 
-![EUR lines over time](bilateral_EAcoverage_GDP.png) 
-Data for replication: [Excel](bilateral_EAcoverage_GDP.xls), [csv](bilateral_EAcoverage_GDP.csv), [dta](bilateral_EAcoverage_GDP.dta) 
+## Without a horizon adjustment, US and EA
+![No horizon adjustment](figw_5yboth.png)
+
+Probability that inflation is above 4% (5%) on average over the next five years (so, e.g., estimate in April 2024 is for annualized inflation between April 2024 and April 2029).
 
 ---
 
-## The evolution over time of the RMB bilateral liquidity lines 
-![RMB lines over time](bilateral_CHNcoverage_GDP.png) 
-Data for replication: [Excel](bilateral_CHNcoverage_GDP.xls), [csv](bilateral_CHNcoverage_GDP.csv), [dta](bilateral_CHNcoverage_GDP.dta) 
+## Densities, without horizon or risk adjustment, US
+![US Densities](figw_USdensities.png) 
+
+Probability densities for inflation, on average over next years (starting form date in label), including risk compensation (would only coincide with actual probabilities if investors were risk neutral).
+
+---
+
+## Densities, without horizon or risk adjustment, EA
+![EA densities](figw_EZdensities.png) 
+
+Probability densities for inflation, on average over next years (starting form date in label), including risk compensation (would only coincide with actual probabilities if investors were risk neutral).
 
 ---
 
