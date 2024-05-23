@@ -10,7 +10,7 @@ The dataset will be updated regularly to reflect the latest data.
 ---
 
 # Authors and Reference:
-[How Likely Is an Inflation Disaster?](https://r2rsquaredlse.github.io/web-lines/infdis.pdf) (2022), CEPR discussion paper 17224. 
+[How Likely Is an Inflation Disaster?](https://r2rsquaredlse.github.io/web-lines/99-infdis.pdf) (2022), CEPR discussion paper 17224. 
 [bibtex](https://personal.lse.ac.uk/reisr/papers/99-infdis-bib.bib)
 - [Jens Hilscher](https://hilscher.ucdavis.edu)
 - [Alon Raviv](https://mba.biu.ac.il/en/raviv)
@@ -27,8 +27,7 @@ Download in Stata dta format:
 ---
 
 # Variables
-The data is at the agreement level: by date and duration (2000-23), by source currency (USD,EUR, RMB, others), by type (bilateral or multilateral), by funding structure (pooled or
-by individual bank), by counterparties (central banks), and by some terms (like collateral).
+The data are time series for different inflation disaster probabilities
 
 <table>
   <tr style="background-color: #d4f4d3;">
@@ -99,49 +98,42 @@ by individual bank), by counterparties (central banks), and by some terms (like 
 
 ## Main estimates, high inflation, US
 ![US inflation](figw_USinfshort.png)
-
 Probability that inflation is above 4% (5%) on average in five years for five years (so, e.g., estimate in April 2024 is for annualized inflation between April 2029 and April 2034.
 
 ---
 
 ## Main estimates, high inflation, EA
 ![EA inflation](figw_EZinfshort.png)
-
 Probability that inflation is above 4% (5%) on average in five years for five years (so, e.g., estimate in April 2024 is for annualized inflation between April 2029 and April 2034.)
 
 ---
 
 ## Main estimates, deflation, US
 ![US deflation](figw_USdefshort.png)
-
 Probability that inflation is below 0% (-1%) on average in five years for five years (so, e.g., estimate in April 2024 is for annualized inflation between April 2029 and April 2034.)
 
 ---
 
 ## Main estimates, deflation, EA
 ![EA deflation](figw_EZdefshort.png)
-
 Probability that inflation is below 0% (-1%) on average in five years for five years (so, e.g., estimate in April 2024 is for annualized inflation between April 2029 and April 2034).
 
 ---
 
 ## Without a horizon adjustment, US and EA
 ![No horizon adjustment](figw_5yboth.png)
-
 Probability that inflation is above 4% (5%) on average over the next five years (so, e.g., estimate in April 2024 is for annualized inflation between April 2024 and April 2029).
 
 ---
 
 ## Densities, without horizon or risk adjustment, US
 ![US Densities](figw_USdensities.png) 
-
 Probability densities for inflation, on average over next years (starting form date in label), including risk compensation (would only coincide with actual probabilities if investors were risk neutral).
 
 ---
 
 ## Densities, without horizon or risk adjustment, EA
 ![EA densities](figw_EZdensities.png) 
-
 Probability densities for inflation, on average over next years (starting form date in label), including risk compensation (would only coincide with actual probabilities if investors were risk neutral).
 
 ---
