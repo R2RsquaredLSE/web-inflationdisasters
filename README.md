@@ -1,6 +1,6 @@
 .
 # Summary
-The prices of inflation options give the cost of insuring against extreme events. They reveal the probabilitiy of these events as perceived by market participants. However, to construct probabilities of inflation disasters at the conventional 5-year-5-year horizon, the standard option pricing formus have to be modified in three ways: to account for the erosion of the real value of the options' payoff, to account for the forward 5-year ahead starting horizon, and to account for compensation for inflation risk. Below are the data and figures for the probabilities of inflation disasters, making some or all of these adjustments. The data starts in January of 2011 and refers to US and EA inflation. This dataset can be **freely used** by other researchers.
+The prices of inflation options give the cost of insuring against extreme events. They reveal the probability of these events as perceived by market participants. However, to construct probabilities of inflation disasters at the conventional 5-year-5-year horizon, the standard option pricing formus have to be modified in three ways: to account for the erosion of the real value of the options' payoff, to account for the forward 5-year ahead starting horizon, and to account for the compensation for inflation risk. Below are data and figures for the probabilities of inflation disasters, making these adjustments. The data starts in January of 2011 and refers to US and EA inflation. This dataset can be **freely used** by other researchers.
 
 The dataset will be updated regularly to reflect the latest data.
 - **Vintage 1:** The dataset was fist released in April of 2022 to cover probabilities until February 2022. 
@@ -98,42 +98,49 @@ The data are time series for different inflation disaster probabilities
 
 ## Main estimates, high inflation, US
 ![US inflation](figw_USinfshort.png)
+
 Probability that inflation is above 4% (5%) on average in five years for five years (so, e.g., estimate in April 2024 is for annualized inflation between April 2029 and April 2034.
 
 ---
 
 ## Main estimates, high inflation, EA
 ![EA inflation](figw_EZinfshort.png)
+
 Probability that inflation is above 4% (5%) on average in five years for five years (so, e.g., estimate in April 2024 is for annualized inflation between April 2029 and April 2034.)
 
 ---
 
 ## Main estimates, deflation, US
 ![US deflation](figw_USdefshort.png)
+
 Probability that inflation is below 0% (-1%) on average in five years for five years (so, e.g., estimate in April 2024 is for annualized inflation between April 2029 and April 2034.)
 
 ---
 
 ## Main estimates, deflation, EA
 ![EA deflation](figw_EZdefshort.png)
+
 Probability that inflation is below 0% (-1%) on average in five years for five years (so, e.g., estimate in April 2024 is for annualized inflation between April 2029 and April 2034).
 
 ---
 
 ## Shorter 5-year horizon, US and EA
-![No horizon adjustment](figw_5yboth.png)
+![No horizon adjustment](figw_shorthorizon.png)
+
 Probability that inflation is above 4% (5%) on average over the next five years (so, e.g., estimate in April 2024 is for annualized inflation between April 2024 and April 2029).
 
 ---
 
 ## Densities for 10-year horizon, without risk adjustment, US
 ![US Densities](figw_USdensities.png) 
+
 Probability densities for inflation, on average over next 10 years (starting from date in label), including risk compensation (would only coincide with actual probabilities if investors were risk neutral).
 
 ---
 
 ## Densities for 10-year horizon, without risk adjustment, EA
 ![EA densities](figw_EZdensities.png) 
+
 Probability densities for inflation, on average over next 10 years (starting from date in label), including risk compensation (would only coincide with actual probabilities if investors were risk neutral).
 
 ---
