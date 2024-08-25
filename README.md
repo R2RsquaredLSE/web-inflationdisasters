@@ -94,7 +94,7 @@ The data are time series for different inflation disaster probabilities
 
 ---
 
-# Latest Figures (until April 2024)
+# Latest Figures (from 01/20 to 04/24)
 
 ## Main estimates, high inflation, US
 ![US inflation](figw_USinfshort.png)
