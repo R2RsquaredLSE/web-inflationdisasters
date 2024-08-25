@@ -1,11 +1,11 @@
 .
 # Summary
-The prices of inflation options give the cost of insuring against extreme events. They reveal the probabilitiy of these events as perceived by market participants. However, to extract these probabilities, the standard formula for option pricing formula have to be modified in three ways: to account for the erosion of the real valaue of the options' payoff, to account for the 5-year ahead starting horizon, and to account for compensation for inflation risk. Below are the data and figures for the probabilities of inflation disasters, making some or all of these adjustments. The data starts in January of 2011 and refers to US and EA inflation. This dataset can be **freely used** by other researchers.
+The prices of inflation options give the cost of insuring against extreme events. They reveal the probabilitiy of these events as perceived by market participants. However, to construct probabilities of inflation disasters at the conventional 5-year-5-year horizon, the standard option pricing formus have to be modified in three ways: to account for the erosion of the real value of the options' payoff, to account for the forward 5-year ahead starting horizon, and to account for compensation for inflation risk. Below are the data and figures for the probabilities of inflation disasters, making some or all of these adjustments. The data starts in January of 2011 and refers to US and EA inflation. This dataset can be **freely used** by other researchers.
 
 The dataset will be updated regularly to reflect the latest data.
 - **Vintage 1:** The dataset was fist released in April of 2022 to cover probabilities until February 2022. 
 - **Vintage 2:** The dataset was updated in October 2023 to cover probabilities until August 2023. 
-- **Vintage 3:** The dataset was updated in June 2024 to cover probabilities until April 2024. 
+- **Vintage 3:** The dataset was updated in August 2024 to cover probabilities until April 2024. 
 
 ---
 
@@ -21,7 +21,7 @@ The dataset will be updated regularly to reflect the latest data.
 
 # Probabilities of disaster
 Download in Stata dta format:
-- [United States](USwesttimates.dta)
+- [United States](USwestimates.dta)
 - [Euro Area](EZwestimates.dta)
 
 ---
@@ -120,21 +120,21 @@ Probability that inflation is below 0% (-1%) on average in five years for five y
 
 ---
 
-## Without a horizon adjustment, US and EA
+## Shorter 5-year horizon, US and EA
 ![No horizon adjustment](figw_5yboth.png)
 Probability that inflation is above 4% (5%) on average over the next five years (so, e.g., estimate in April 2024 is for annualized inflation between April 2024 and April 2029).
 
 ---
 
-## Densities, without horizon or risk adjustment, US
+## Densities for 10-year horizon, without risk adjustment, US
 ![US Densities](figw_USdensities.png) 
-Probability densities for inflation, on average over next years (starting form date in label), including risk compensation (would only coincide with actual probabilities if investors were risk neutral).
+Probability densities for inflation, on average over next 10 years (starting from date in label), including risk compensation (would only coincide with actual probabilities if investors were risk neutral).
 
 ---
 
-## Densities, without horizon or risk adjustment, EA
+## Densities for 10-year horizon, without risk adjustment, EA
 ![EA densities](figw_EZdensities.png) 
-Probability densities for inflation, on average over next years (starting form date in label), including risk compensation (would only coincide with actual probabilities if investors were risk neutral).
+Probability densities for inflation, on average over next 10 years (starting from date in label), including risk compensation (would only coincide with actual probabilities if investors were risk neutral).
 
 ---
 
