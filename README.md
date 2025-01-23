@@ -5,7 +5,7 @@ The prices of inflation options give the cost of insuring against extreme events
 The dataset will be updated regularly to reflect the latest data.
 - **Vintage 1:** The dataset was fist released in April of 2022 to cover probabilities until February 2022. 
 - **Vintage 2:** The dataset was updated in October 2023 to cover probabilities until August 2023. 
-- **Vintage 3:** The dataset was updated in August 2024 to cover probabilities until April 2024. This also came with a re-estimation of the model for horizon and risk, leading to (small) differences in previous probabilities)
+- **Vintage 3:** The dataset was updated in August 2024 to cover probabilities until April 2024. This also came with a re-estimation of the model for horizon and risk, leading to (small) differences in previous probabilities.
 - **Vintage 4:** The dataset was updated in December 2024 to cover probabilities until October 2024. 
 
 
