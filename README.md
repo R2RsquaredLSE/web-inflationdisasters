@@ -14,12 +14,12 @@ The dataset will be updated regularly to reflect the latest data.
 ---
 
 # Authors and Reference:
-[How Likely Is an Inflation Disaster?](https://r2rsquaredlse.github.io/web-lines/99-infdis.pdf) (2022), CEPR discussion paper 17224. 
-[bibtex](https://personal.lse.ac.uk/reisr/papers/99-infdis-bib.bib)
+[How Likely Is an Inflation Disaster?](https://r2rsquaredlse.github.io/web-lines/25-infdis.pdf) (2025), Review of Financial Studies, forthcoming. 
+[bibtex](https://personal.lse.ac.uk/reisr/papers/25-infdis-bib.bib)
 - [Jens Hilscher](https://hilscher.ucdavis.edu)
 - [Alon Raviv](https://mba.biu.ac.il/en/raviv)
 - [Ricardo Reis](https://www.r2rsquared.com/)
-- Acknowledgments: Daniel Albuquerque, Marina Feliciano, Seyed Mahdi Hosseini, Anna Pilipentseva, Rui Sousa, and Borui Zhu provided excellent research assistance.
+- Acknowledgments: Daniel Albuquerque, Marina Feliciano, Seyed Mahdi Hosseini, Rui Sousa, Nicholas Tokay, and Borui Zhu provided excellent research assistance.
 
 ---
 
