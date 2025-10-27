@@ -8,6 +8,7 @@ The dataset will be updated regularly to reflect the latest data.
 - **Vintage 3:** The dataset was updated in August 2024 to cover probabilities until April 2024. This also came with a re-estimation of the model for horizon and risk, leading to (small) differences in previous probabilities.
 - **Vintage 4:** The dataset was updated in December 2024 to cover probabilities until October 2024. 
 - **Vintage 5:** The dataset was updated in May 2025 to cover probabilities until April 2025. 
+- **Vintage 6:** The dataset was updated in October 2025 to cover probabilities until September 2025. 
 
 
 ---
@@ -97,40 +98,40 @@ The data are time series for different inflation disaster probabilities
 
 ---
 
-# Latest Figures (from 01/20 to 04/25)
+# Latest Figures (from 01/20 to 09/25)
 
 ## Main estimates, high inflation, US
 ![US inflation](figw_USinfshort.png)
 
-Probability that inflation is above 4% (5%) on average in five years for five years (so, e.g., estimate in April 2025 is for annualized inflation between April 2030 and April 2035.
+Probability that inflation is above 4% (5%) on average in five years for five years (so, e.g., estimate in September 2025 is for annualized inflation between September 2030 and September 2035.
 
 ---
 
 ## Main estimates, high inflation, EA
 ![EA inflation](figw_EZinfshort.png)
 
-Probability that inflation is above 4% (5%) on average in five years for five years (so, e.g., estimate in April 2025 is for annualized inflation between April 2030 and April 2035.)
+Probability that inflation is above 4% (5%) on average in five years for five years (so, e.g., estimate in September 2025 is for annualized inflation between September 2030 and September 2035.)
 
 ---
 
 ## Main estimates, deflation, US
 ![US deflation](figw_USdefshort.png)
 
-Probability that inflation is below 0% (-1%) on average in five years for five years (so, e.g., estimate in April 2025 is for annualized inflation between April 2030 and April 2035.)
+Probability that inflation is below 0% (-1%) on average in five years for five years (so, e.g., estimate in September 2025 is for annualized inflation between September 2030 and September 2035.)
 
 ---
 
 ## Main estimates, deflation, EA
 ![EA deflation](figw_EZdefshort.png)
 
-Probability that inflation is below 0% (-1%) on average in five years for five years (so, e.g., estimate in April 2025 is for annualized inflation between April 2030 and April 2035).
+Probability that inflation is below 0% (-1%) on average in five years for five years (so, e.g., estimate in September 2025 is for annualized inflation between September 2030 and September 2035).
 
 ---
 
 ## Shorter 5-year horizon, US and EA
 ![No horizon adjustment](figw_shorthorizon.png)
 
-Probability that inflation is above 4% (5%) on average over the next five years (so, e.g., estimate in April 2025 is for annualized inflation between April 2025 and April 2030).
+Probability that inflation is above 4% (5%) on average over the next five years (so, e.g., estimate in September 2025 is for annualized inflation between September 2025 and September 2030).
 
 ---
 
