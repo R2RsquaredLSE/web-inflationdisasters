@@ -10,6 +10,7 @@ The dataset will be updated regularly to reflect the latest data.
 - **Vintage 5:** The dataset was updated in May 2025 to cover probabilities until April 2025. 
 - **Vintage 6:** The dataset was updated in October 2025 to cover probabilities until September 2025. 
 - **Vintage 7:** The dataset was updated in March 2026 to cover probabilities until February 2026. 
+- **Vintage 8:** The dataset was updated in May 2026 to cover probabilities until April 2026.
 
 
 ---
@@ -99,54 +100,40 @@ The data are time series for different inflation disaster probabilities
 
 ---
 
-# Latest Figures (from 01/20 to 02/26)
+# Latest Figures (from 01/21 to 04/26)
 
 ## Main estimates, high inflation, US
 ![US inflation](figw_USinfshort.png)
 
-Probability that inflation is above 4% (5%) on average in five years for five years (so, e.g., estimate in February 2026 is for annualized inflation between February 2031 and February 2036.
+Probability that inflation is above 4% (5%) on average in five years for five years (so, e.g., estimate in April 2026 is for annualized inflation between April 2031 and April 2036.
 
 ---
 
 ## Main estimates, high inflation, EA
 ![EA inflation](figw_EZinfshort.png)
 
-Probability that inflation is above 4% (5%) on average in five years for five years (so, e.g., estimate in February 2026 is for annualized inflation between February 2031 and February 2036.)
+Probability that inflation is above 4% (5%) on average in five years for five years (so, e.g., estimate in April 2026 is for annualized inflation between April 2031 and April 2036.)
 
 ---
 
 ## Main estimates, deflation, US
 ![US deflation](figw_USdefshort.png)
 
-Probability that inflation is below 0% (-1%) on average in five years for five years (so, e.g., estimate in February 2026 is for annualized inflation between February 2031 and February 2036.)
+Probability that inflation is below 0% (-1%) on average in five years for five years (so, e.g., estimate in April 2026 is for annualized inflation between April 2031 and April 2036.)
 
 ---
 
 ## Main estimates, deflation, EA
 ![EA deflation](figw_EZdefshort.png)
 
-Probability that inflation is below 0% (-1%) on average in five years for five years (so, e.g., estimate in February 2025 is for annualized inflation between February 2031 and February 2036).
+Probability that inflation is below 0% (-1%) on average in five years for five years (so, e.g., estimate in April 2025 is for annualized inflation between April 2031 and April 2036).
 
 ---
 
 ## Shorter 5-year horizon, US and EA
 ![No horizon adjustment](figw_shorthorizon.png)
 
-Probability that inflation is above 4% (5%) on average over the next five years (so, e.g., estimate in February 2026 is for annualized inflation between February 2026 and February 2031).
-
----
-
-## Densities for 10-year horizon, without risk adjustment, US
-![US Densities](figw_USdensities.png) 
-
-Probability densities for inflation, on average over next 10 years (starting from date in label), including risk compensation (would only coincide with actual probabilities if investors were risk neutral).
-
----
-
-## Densities for 10-year horizon, without risk adjustment, EA
-![EA densities](figw_EZdensities.png) 
-
-Probability densities for inflation, on average over next 10 years (starting from date in label), including risk compensation (would only coincide with actual probabilities if investors were risk neutral).
+Probability that inflation is above 4% (5%) on average over the next five years (so, e.g., estimate in April 2026 is for annualized inflation between April 2026 and April 2031).
 
 ---
 
