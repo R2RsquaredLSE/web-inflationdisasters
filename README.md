@@ -1,4 +1,3 @@
-.
 # Summary
 The prices of inflation options give the cost of insuring against extreme events. They reveal the probability of these events as perceived by market participants. However, to construct probabilities of inflation disasters at the conventional 5-year-5-year horizon, the standard option pricing formulas have to be modified in three ways: to account for the erosion of the real value of the options' payoff, to account for the forward 5-year ahead starting horizon, and to account for the compensation for inflation risk. Below are data and figures for the probabilities of inflation disasters, making these adjustments. The data starts in January of 2011 and refers to US and EA inflation. This dataset can be **freely used** by other researchers.
 
